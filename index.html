@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalaxyRent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>GalaxyRent</span>
+            </div>
+            <nav class="nav">
+                <button class="btn-contact">Контакты</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="title">Наши космические корабли</h1>
+            <p class="subtitle">Выберите корабль для аренды</p>
+
+            <div class="ships-grid" id="shipsGrid">
+            </div>
+        </div>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <div class="modal-image" id="modalImage"></div>
+                <div class="modal-info">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <div class="modal-badges" id="modalBadges"></div>
+                    <p class="modal-description" id="modalDescription"></p>
+
+                    <div class="modal-features">
+                        <h3><i class="fas fa-star"></i> Особенности</h3>
+                        <div class="features-list" id="featuresList"></div>
+                    </div>
+
+                    <div class="modal-stats">
+                        <div class="stat">
+                            <div class="stat-value" id="statPassengers"></div>
+                            <div class="stat-label">пассажиров</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" id="statSpeed"></div>
+                            <div class="stat-label">скорость</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" id="statPrice"></div>
+                            <div class="stat-label">в день</div>
+                        </div>
+                    </div>
+
+                    <button class="btn-book" id="bookButton">Забронировать сейчас</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 GalaxyRent. Все права защищены.</p>
+            <p>Космическая аренда кораблей для межгалактических путешествий</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
